@@ -1,2 +1,2 @@
 # Determinant-Quantum-Monte-Carlo
-Contains DQMC implementation if clean repulsive Hubbard model
+Contains DQMC implementation of clean repulsive Hubbard model
