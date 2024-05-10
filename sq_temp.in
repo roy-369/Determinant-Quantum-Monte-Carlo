@@ -1,0 +1,45 @@
+# ==========================
+# lattice dimension
+# ==========================
+
+ofile  = N_12_U_Uval_tprime_t1_mu_CHEM_dtau_delt_L_Slices_r_realize_PBC
+gfile  = square.geom
+
+# ==========================
+# Hubbard model
+# ==========================
+
+mu_up  =  CHEM
+mu_dn  =  CHEM
+L      = Slices
+dtau   = delt
+HSF    = -1
+bcond  =  0.0, 0.0, 0.0
+
+# ==========================
+# Met's algorithm
+# ==========================
+
+nwarm  = 2000   #no of Monte Carlo sweeps for thermalization 
+npass  = 10000   #no of Monte Carlo sweeps for measurements
+ntry   = 0      #no of gobal moves
+tausk  = 10      #no of Monte Carlo sweeps that are skipped between measurements
+tdm    = 1      #Green's function, 0--> Equal time Green's function, 1--> Unequal times Green's function
+
+# ==========================
+# Measurements
+# ==========================
+
+nbin   = 10
+nhist  = 0
+seed   = 0     # Seed value for generating initial HS configuration
+
+# ==========================
+# numerical
+# ==========================
+
+north  = 5          # No of orthoganalizations, L should be multiple of north
+nwrap  = 10 
+fixwrap = 1
+errrate = 0.001
+difflim = 0.0001
